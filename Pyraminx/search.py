@@ -40,17 +40,3 @@ def solve():
 	print('Pyraminx Depth is ' + str(len(dist) - 2) + ', solved in ' + str(round(time.time() - start_time, 2)) + ' seconds')
 
 solve()
-
-#testing
-
-import moves
-
-def test():
-	s = solved_position
-	print(moves.R(s))
-	print(moves.R(moves.Rp(s)) == s)
-	print(moves.L(moves.Lp(s)) == s)
-	print(moves.U(moves.Up(s)) == s)
-	print(moves.B(moves.Bp(s)) == s)
-
-#test()
