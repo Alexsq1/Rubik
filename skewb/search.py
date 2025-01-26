@@ -1,4 +1,4 @@
-# Generates every 2x2 position, categorized by depth.
+# Generates every skewb position, categorized by depth.
 
 import moves
 import time

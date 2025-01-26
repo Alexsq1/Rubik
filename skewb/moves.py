@@ -1,5 +1,3 @@
-# Hard coded moves to perform on the cube.
-# Position is passed in and returned with the stickers in the order they should be after the turn.
 
 def R(pos):
 	return (pos[0] + pos[1] + pos[5] +
