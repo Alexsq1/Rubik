@@ -1,23 +1,14 @@
 --This program calculates the number of different states of a nxnxn Rubik's Cube
 
---main :: IO ()
---main = do
---    putStrLn "Introduce un número:"
---    input <- getLine
---    let num = read input :: Int
---    putStrLn $ "Has introducido: " ++ show num
---
-
 main :: IO()
 main = do
-    --putStrLn "Insert the number of n"
-    --input <- getLine
-    --let n = read input :: Integer
-    --putStrLn $ "Number of states is " ++ (show $ states n)
-    --putStrLn $ "This number has " ++ (show $ numDigits $ states n) ++ " digits"
-    --return ()
-    putStrLn $ show $ map (states) [2..7]
-
+    putStrLn "This program calculates the number of different states of a nxnxn Rubik's Cube :D."
+    putStrLn "Insert the number of n:"
+    input <- getLine
+    let n = read input :: Integer
+    putStrLn $ "Number of states is " ++ (show $ states n)
+    putStrLn $ "This number has " ++ (show $ numDigits $ states n) ++ " digits"
+    return ()
 
 
 states :: Integer -> Integer
